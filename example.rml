@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?> 
+<!DOCTYPE document SYSTEM "rml_1_0.dtd">
+<document filename="example.rml">
+    <template pageSize="(21cm, 29.7cm)" leftMargin="72" showBoundary="0" title="example" allowSplitting="0">
+        <pageTemplate id="main">
+            <pageGraphics/>
+        <frame id="first" x1="1cm" y1="2cm" width="19cm" height="26.7cm" showBoundary="0"/>
+        </pageTemplate>
+    </template>
+
+
+    <stylesheet>
+        <paraStyle 
+            name="default"
+            fontName="DejaVuSans"
+            fontSize="7"
+            leading="9"
+            alignment="LEFT"
+            textColor="black"
+            />
+
+        <paraStyle
+            name="h1"
+            parent="default"
+            fontSize="12"
+            leading="16"
+            fontName="DejaVuSans-Bold"
+            />
+
+        <paraStyle
+            name="h2"
+            parent="default"
+            fontSize="11"
+            leading="16"
+            fontName="DejaVuSans-Bold"
+            textColor="#0059a0"
+            />
+
+        <paraStyle
+            name="h1-center"
+            parent="h1"
+            alignment="CENTER"
+            />
+    </stylesheet>
+
+    <story>
+        <para style="h1-center">złożoność środkowa</para>
+        <para style="h2">podzłożoność</para>
+
+        <para style="default" alignment="center">żółć, ŻÓŁĆ</para>
+        <para style="default" alignment="RIGHT">Zółw Zółty</para>
+    </story>
+</document>
